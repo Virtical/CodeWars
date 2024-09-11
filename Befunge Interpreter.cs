@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Linq;
 using System.Text;
+using System;
+
 public class BefungeInterpreter
 {
     class indicator
@@ -167,13 +169,5 @@ public class BefungeInterpreter
             move(i);
         }
         return strBuilder.ToString();
-    }
-}
-
-public class Program
-{
-    public static void Main()
-    {
-        Console.WriteLine(new BefungeInterpreter().Interpret("2>:3g\" \"-!v\\  g30          <\r\n |!`\"&\":+1_:.:03p>03g+:\"&\"`|\r\n @               ^  p3\\\" \":<\r\n2 2345678901234567890123456789012345678"));
     }
 }
